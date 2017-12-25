@@ -1,4 +1,73 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.title {
+  font-family: sans-serif;
+  font-weight: 100;
+  margin: 1em 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.emphasis {
+  text-transform: uppercase;
+}
+
+.preview {
+  color: #fff;
+  display: block;
+  height: 360px;
+  margin-bottom: 2em;
+  padding: 3em 6em;
+  width: 100%;
+}
+
+.baku {
+  background: url(/images/baku.jpg)top center no-repeat;
+  background-size: cover;
+}
+
+.london {
+  background: url(/images/london.png)center center no-repeat;
+  background-size: cover;
+}
+
+.madrid {
+  background: url(/images/madrid.jpg)left center no-repeat;
+
+  /* background-size: cover; */
+}
+
+.rome {
+  background: url(/images/rome.jpg)center center no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 760px){
+  .container {
+    padding: 1em;
+  }
+
+  .preview {
+    display: inline-block;
+    float: left;
+    margin: 1%;
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 991px){
+  .preview {
+    width: 23%;
+  }
 }
